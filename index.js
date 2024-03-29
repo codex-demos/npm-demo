@@ -1,5 +1,7 @@
 'use strict';
 
-const { greet } = require('./lib/greet'); // does not require file extension
+const goodbye = require('./lib/bye');
+const { greet } = require('./lib/greet');
 
-console.log(greet('Lewis'));
+// exporting both files in an object
+module.exports = { greet, goodbye };
